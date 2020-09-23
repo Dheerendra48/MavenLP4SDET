@@ -20,7 +20,7 @@ public class steps {
 	@Before
 	public void beforetest()
 	{
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver_win32//Chrome driver 85//chromedriver_win32 (1)//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://DKS//Software//chromedriver_win32//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
@@ -63,7 +63,7 @@ public class steps {
 		   Assert.assertEquals(expected, string);
 		   driver.findElement(By.id("welcome")).click();
 		   Thread.sleep(3000);
-		   driver.findElement(By.xpath("//*[@id='welcome-menu']/ul/li[3]/a")).click();
+		   driver.findElement(By.xpath("//*[@id='welcome-menu']/ul/li[2]/a")).click();
 		   Thread.sleep(3000);
 		   
 	  

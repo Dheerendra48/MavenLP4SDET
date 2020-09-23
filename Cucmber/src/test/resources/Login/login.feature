@@ -1,3 +1,4 @@
+@Login
 Feature: Login Features
 This feature includes scenario that would validate the following features.
 1. Login as Admin
@@ -34,7 +35,7 @@ Examples:
 |Admin				 |admin123      |Welcome Linda|
 |linda.anderson|linda.anderson|Welcome Linda|
 
-
+@Negative
 Scenario: Login with Negative data
 When I Enter the username as "sunil" 
 And I Enter the password as "sunil" 
